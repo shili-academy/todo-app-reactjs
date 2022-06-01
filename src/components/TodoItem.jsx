@@ -6,7 +6,7 @@ const TodoItem = (props) => {
 
   return (
     <div onClick={() => setDone((prevState) => !prevState)} style={{
-      ...(done && {color: 'green'})
+      ...(done && {color: 'red'})
     }}>This is a todo item</div>
   )
 }
