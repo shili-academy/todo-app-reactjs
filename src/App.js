@@ -1,10 +1,18 @@
 import "./App.css";
-import Sum from "./components/Sum";
+import TodoApp from "./components/TodoApp";
+import { ChakraProvider, Flex, Heading } from "@chakra-ui/react";
 
 function App() {
   return (
     <>
-      <Sum />
+      <ChakraProvider>
+        <Heading align="center" size="lg" fontSize="50px">
+          Todo app
+        </Heading>
+        <Flex my={5} align="center" justify="center">
+          <TodoApp />
+        </Flex>
+      </ChakraProvider>
     </>
   );
 }
